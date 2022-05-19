@@ -1,15 +1,17 @@
 import java.util.Scanner;
 
+import javax.security.auth.login.LoginContext;
+
 public class Ejerciciosvarios {
     /**
      * InnerEjerciciosvarios
      */
     static Scanner leerT=new Scanner(System.in);
 
-    public static int factorialN(int numero) {
-        int resultado=1;
+    public static Long factorialN(int numero) {
+        long resultado=1;
         if (numero>1){      
-           for (int i = 1; i <=numero; i++){
+           for (long i = 1; i <=numero; i++){
                resultado=resultado*i;
            }
            }           
@@ -17,8 +19,13 @@ public class Ejerciciosvarios {
     }
 
     public static void main(String[] args) {
-      System.out.println(factorialN(5));  
+      System.out.println(" ingrese un numero:");
+      int num=leerT.nextInt();
+      for (int i = 0; i <num; i++){
+      System.out.println("factorial de"+ i+" es:"+ factorialN(i)); 
+
     }
 
     
+}
 }
