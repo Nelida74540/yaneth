@@ -17,7 +17,7 @@ public class ejercicio {
 }
 }
 }
-    public static void ejercicio42() {
+    public static void ejercicio42YNCC() {
         //Definir variables
         int n,tarjeta,hamburguesa;
         double total=0;
@@ -42,7 +42,7 @@ public class ejercicio {
             default: break;
         }
     }
-    public static void ejercicio43() {
+    public static void ejercicio43YNCC() {
         //Definir variables
         int conta0=0,contaMas=0,contaMenos=0, n,num;
         //Datos de entrada
@@ -63,7 +63,7 @@ public class ejercicio {
         System.out.println("La cantidad de numeros mayor a 0 es: "+contaMas);
         System.out.println("La cantidad de numeros menor a 0 es: "+contaMenos);
     }
-    public static void ejercicio44() {
+    public static void ejercicio44YNCC() {
         //Definir Variables
         int cantfocoV=0, cantfocoB=0, cantfocoR=0;
         String colorF="";
@@ -90,40 +90,40 @@ public class ejercicio {
         System.out.println("La cantidad de focos de color Rojo es: "+cantfocoR);
         System.out.println("La cantidad Total de focos son: "+(cantfocoV+cantfocoB+cantfocoR));
     }
-    public static void ejercicio45() {
+    public static void ejercicio45YNCC() {
         //Definir variables
         int n;
         //Datos de entrada
-        System.out.println("Ingrese el proceso deseado \n1.-While \n2.-For");
+        System.out.println("Ingresar el proceso deseado \n1.-While \n2.-For");
         n=lt.nextInt();
         switch (n) {
-            case 1://Definir variables
-                    int v=0;
-                    double salario=1500;
-                    while (v<6) {
-                    salario=salario+(salario*0.10);
-                    System.out.println("Su salario el "+(v+1)+" año sera de:"+salario);
-                    v++;
-                    }; break;
-            case 2://Definir variables
+            //Definir variables
+                int v=0;
+                double salario=1500;
+                while (v<6) {
+                salario=salario+(salario*0.10);
+                System.out.println("Su salario es "+(v+1)+" año sera de:"+salario);
+                v++;
+                }; break;
+            //Definir variables
                 double total=1500;
                 for (int i = 0; i < 6; i++) {
                 total=total+(total*0.10);
                 System.out.println("Su salario el "+(i+1)+" año sera de:"+total);
                 }break;
-            default:
+            } default;
                 break;
         }
-    }
     
-    public static void ejercicio47() {
+    
+    public static void ejercicio47YNCC() {
         //Definir Variables
         int cantNumMayorcero=0, cantNumMenorIgualCero=0;
         double numN=0;
         String continuar="S";
         //Datos de entrada y proceso
         while (continuar.equals("S")) {
-            System.out.println("Ingrese un numero:");
+            System.out.println("Ingresar un numero:");
             numN=lt.nextDouble();
             if (numN<=0) {
                 cantNumMenorIgualCero++;
@@ -134,21 +134,21 @@ public class ejercicio {
             continuar=lt.next().toUpperCase().equals("S")?"S":"N";
         }  
         //Datos de salida
-        System.out.println("Cantidad de numeros Mayores de cero: "+cantNumMayorcero);
-        System.out.println("Cantidad de numeros menores e iguales a cero: "+cantNumMenorIgualCero);
-        System.out.println("Total de numeros introducidos: "+(cantNumMayorcero+cantNumMenorIgualCero));
+        System.out.println("Cual es la cantidad de numeros Mayores de cero: "+cantNumMayorcero);
+        System.out.println("Cual es la cantidad de numeros menores e iguales a cero: "+cantNumMenorIgualCero);
+        System.out.println("cual es el total de numeros introducidos: "+(cantNumMayorcero+cantNumMenorIgualCero));
     }
-    public static void ejercicio48() {
+    public static void ejercicio48YNCC() {
         //Definir variables
         int años;
         double saldo=0, interes=0, total=0, deposito=0;
         //Datos de entrada
-        System.out.println("Ingrese la cantidad de años ahorrados: ");
+        System.out.println("Ingresar la cantidad de años ahorrados: ");
         años=lt.nextInt();
         //Proceso
         while (años>0) {
             for (int i = 0; i < 12; i++) {
-            System.out.println("Ingrese el deposito del mes "+(i+1)+":");
+            System.out.println("Ingresar el deposito del mes "+(i+1)+":");
             deposito=lt.nextDouble();
             saldo=saldo+deposito;
         }
@@ -157,12 +157,12 @@ public class ejercicio {
         años=años-1;
         }
         //Datos de salida
-        System.out.println("Tu ahorro en el año es: "+saldo)
+        System.out.println("Tu ahorro en el año es: "+saldo);
         System.out.println("El interes ganado es: "+interes);
         System.out.println("Tu ahorro ya con interes es: "+total);
-        System.out.println("")
+        System.out.println("");
     }
-    public static void ejercicio49() {
+    public static void ejercicio49YNCC() {
         //Definir datos
         int n,salones,edad,suma=0,total=0,alumnos=0;
         //Datos de entrada
