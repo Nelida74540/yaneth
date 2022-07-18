@@ -1,0 +1,8 @@
+M1	Gamer
+M2	Basica
+M3	Gama alta
+M4	Laser
+M5	Tinta
+M6	Silla gamer
+M7	Luces
+M8	Alfombrilla

@@ -1,0 +1,4 @@
+C1	Laptop
+C2	Cpu
+C3	Impresora
+C4	Otros
