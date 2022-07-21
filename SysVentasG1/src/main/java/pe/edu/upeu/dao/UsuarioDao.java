@@ -1,6 +1,11 @@
 package pe.edu.upeu.dao;
 
+import java.awt.event.KeyEvent;
 import java.io.Console;
+import java.security.Key;
+
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
 import pe.edu.upeu.crud.AppCrud;
 import pe.edu.upeu.modelo.UsuarioTO;
@@ -35,7 +40,21 @@ public class UsuarioDao extends AppCrud{
         }
         return false;
    }
-   
+   public void readPassword( java.awt.event.KeyEvent evt) {
+       int var=evt.getKeyCode();
+       
+       if(var == KeyEvent.VK_ENTER)
+       { 
+           String usuario = n.getText();
+           String passwd = ;
 
 
+
+
+
+       }
+    }
 }
+
+
+
